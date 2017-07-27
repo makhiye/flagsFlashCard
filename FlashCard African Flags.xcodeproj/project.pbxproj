@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		9A1F92831EFCBC830048DE93 /* webInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F92821EFCBC830048DE93 /* webInfoViewController.swift */; };
 		9A3AFFB31F14612700284628 /* borderedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AFFB21F14612700284628 /* borderedImage.swift */; };
-		9A4C9CB41F03386000282975 /* roundedButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C9CB31F03386000282975 /* roundedButtons.swift */; };
 		9A4C9CB61F0355C500282975 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C9CB51F0355C500282975 /* HomeViewController.swift */; };
+		9A4F82E71F29975E0077C758 /* roundedButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F82E61F29975E0077C758 /* roundedButtons.swift */; };
 		9A8845FD1F048FA3002726AD /* draw-card.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A8845FB1F048FA3002726AD /* draw-card.mp3 */; };
 		9A8845FE1F048FA3002726AD /* reveal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A8845FC1F048FA3002726AD /* reveal.mp3 */; };
 		9A9A60C71F01F325003E4D5A /* ExploreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A60C61F01F325003E4D5A /* ExploreTableViewController.swift */; };
@@ -27,8 +27,8 @@
 /* Begin PBXFileReference section */
 		9A1F92821EFCBC830048DE93 /* webInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webInfoViewController.swift; sourceTree = "<group>"; };
 		9A3AFFB21F14612700284628 /* borderedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = borderedImage.swift; sourceTree = "<group>"; };
-		9A4C9CB31F03386000282975 /* roundedButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = roundedButtons.swift; path = "../../example odd even game/roundedButtons.swift"; sourceTree = "<group>"; };
 		9A4C9CB51F0355C500282975 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9A4F82E61F29975E0077C758 /* roundedButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedButtons.swift; sourceTree = "<group>"; };
 		9A8845FB1F048FA3002726AD /* draw-card.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "draw-card.mp3"; path = "../draw-card.mp3"; sourceTree = "<group>"; };
 		9A8845FC1F048FA3002726AD /* reveal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = reveal.mp3; path = ../reveal.mp3; sourceTree = "<group>"; };
 		9A9A60C61F01F325003E4D5A /* ExploreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreTableViewController.swift; sourceTree = "<group>"; };
@@ -58,10 +58,10 @@
 		9A8845F91F048DC1002726AD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9A4C9CB31F03386000282975 /* roundedButtons.swift */,
 				9A3AFFB21F14612700284628 /* borderedImage.swift */,
 				9AD0EFDC1EF8C2FD0003577A /* AppDelegate.swift */,
 				9AD0EFDE1EF8C2FD0003577A /* CardViewController.swift */,
+				9A4F82E61F29975E0077C758 /* roundedButtons.swift */,
 				9A9A60C61F01F325003E4D5A /* ExploreTableViewController.swift */,
 				9A4C9CB51F0355C500282975 /* HomeViewController.swift */,
 				9A1F92821EFCBC830048DE93 /* webInfoViewController.swift */,
@@ -193,8 +193,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4C9CB41F03386000282975 /* roundedButtons.swift in Sources */,
 				9A3AFFB31F14612700284628 /* borderedImage.swift in Sources */,
+				9A4F82E71F29975E0077C758 /* roundedButtons.swift in Sources */,
 				9A9A60C71F01F325003E4D5A /* ExploreTableViewController.swift in Sources */,
 				9ADC05781EFB45AC0062C884 /* CardDeck.swift in Sources */,
 				9A4C9CB61F0355C500282975 /* HomeViewController.swift in Sources */,
