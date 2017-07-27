@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" tag="50" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fd3-IE-3uk">
+                                <rect key="frame" x="25" y="100" width="325" height="297.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flags of Africa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zhj-Zx-lTV">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="71"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="50"/>
+                                        <color key="textColor" red="0.2124629961" green="0.64291207900000003" blue="0.31996928089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="African_Union_flag" translatesAutoresizingMaskIntoConstraints="NO" id="nep-e0-6WU">
+                                        <rect key="frame" x="0.0" y="81" width="325" height="216.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nep-e0-6WU" secondAttribute="height" multiplier="3:2" id="CQE-iA-mc7"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="400" id="YuB-FX-HwG"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Fd3-IE-3uk" secondAttribute="bottom" constant="25" id="BMV-qR-oPd"/>
+                            <constraint firstItem="Fd3-IE-3uk" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="100" id="WWS-2J-FNS"/>
+                            <constraint firstAttribute="trailing" secondItem="Fd3-IE-3uk" secondAttribute="trailing" constant="25" id="cLB-JO-Efz"/>
+                            <constraint firstItem="Fd3-IE-3uk" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="25" id="hPe-ri-Dew"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="African_Union_flag" width="600" height="400"/>
+    </resources>
+</document>

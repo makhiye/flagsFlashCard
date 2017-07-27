@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KkQ-hx-DtC">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flash Cards-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CardViewController" customModule="FlashCard_African_Flags" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9zT-Yb-lLL">
+                                <rect key="frame" x="30" y="74" width="260" height="386"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="COUNTRY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WB7-nk-jdY">
+                                        <rect key="frame" x="75" y="0.0" width="110" height="35.5"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                        <color key="textColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="African Union_Flag" translatesAutoresizingMaskIntoConstraints="NO" id="Oeb-eY-IfY">
+                                        <rect key="frame" x="0.0" y="43.5" width="260" height="173.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="400" id="hNJ-bO-HqI"/>
+                                            <constraint firstAttribute="width" secondItem="Oeb-eY-IfY" secondAttribute="height" multiplier="3:2" id="xj5-3u-gOG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IX3-EL-Xdl">
+                                        <rect key="frame" x="61" y="225" width="138.5" height="161"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAPITAL CITY:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Myf-IS-Srr">
+                                                <rect key="frame" x="0.0" y="0.0" width="138.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                <color key="textColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="y59-ZK-Vue">
+                                                <rect key="frame" x="27.5" y="20" width="83.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                <color key="textColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="WBJ-P1-Z1j">
+                                                <rect key="frame" x="27.5" y="40.5" width="83" height="20"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                <color key="textColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GDP:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="rEg-S1-AqX">
+                                                <rect key="frame" x="50.5" y="60.5" width="37" height="20"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                <color key="textColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="87q-6X-74Q" userLabel="Currency Label">
+                                                <rect key="frame" x="32" y="80.5" width="74.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                <color key="textColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Area:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="edM-0O-Tcj">
+                                                <rect key="frame" x="28" y="100.5" width="82" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                <color key="textColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Government Type:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-oY-FQ8">
+                                                <rect key="frame" x="0.5" y="121" width="137.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                <color key="textColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8ql-N3-hPt">
+                                                <rect key="frame" x="31" y="141" width="76.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                <color key="textColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7268536377" green="0.85106825269999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9zT-Yb-lLL" secondAttribute="bottom" constant="20" id="CrG-58-2PI"/>
+                            <constraint firstItem="9zT-Yb-lLL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="KTi-aC-d00"/>
+                            <constraint firstAttribute="trailing" secondItem="9zT-Yb-lLL" secondAttribute="trailing" constant="30" id="ehV-mI-pcy"/>
+                            <constraint firstItem="9zT-Yb-lLL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="s7K-Vf-bwO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Flash Cards" id="YUN-lU-xpP">
+                        <barButtonItem key="rightBarButtonItem" title="More info" id="qCR-e5-Iwo">
+                            <connections>
+                                <segue destination="TDS-nA-xxN" kind="show" id="JwF-Jh-s7L"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="capitalCityLabel" destination="Myf-IS-Srr" id="zLS-bY-RWo"/>
+                        <outlet property="capitalCityName" destination="y59-ZK-Vue" id="8v3-R6-6QH"/>
+                        <outlet property="countryNameLabel" destination="WB7-nk-jdY" id="Jh8-hy-JBW"/>
+                        <outlet property="currencyLabel" destination="87q-6X-74Q" id="wSE-SR-Wcy"/>
+                        <outlet property="flagImages" destination="Oeb-eY-IfY" id="7n8-qz-Z5b"/>
+                        <outlet property="gdpLabel" destination="rEg-S1-AqX" id="b7Q-3S-iTg"/>
+                        <outlet property="governmentTypeLabel" destination="eb9-oY-FQ8" id="zX0-BN-GYh"/>
+                        <outlet property="languageLabel" destination="8ql-N3-hPt" id="cqq-6d-OWz"/>
+                        <outlet property="populationLabel" destination="WBJ-P1-Z1j" id="tVC-dH-qLz"/>
+                        <outlet property="totalAreaLabel" destination="edM-0O-Tcj" id="MQ5-ky-EaW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2048.8000000000002" y="178.56071964017991"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="eNW-gx-iTL">
+            <objects>
+                <viewController id="TDS-nA-xxN" customClass="webInfoViewController" customModule="FlashCard_African_Flags" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="04a-Bc-ZuS"/>
+                        <viewControllerLayoutGuide type="bottom" id="wSb-Uk-Kdr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Om-kI-AsO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18n-hY-TYX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="18n-hY-TYX" secondAttribute="trailing" id="1oJ-5m-PGi"/>
+                            <constraint firstItem="18n-hY-TYX" firstAttribute="top" secondItem="0Om-kI-AsO" secondAttribute="top" id="73j-z8-fJy"/>
+                            <constraint firstItem="wSb-Uk-Kdr" firstAttribute="top" secondItem="18n-hY-TYX" secondAttribute="bottom" id="H33-Q1-QSb"/>
+                            <constraint firstItem="18n-hY-TYX" firstAttribute="leading" secondItem="0Om-kI-AsO" secondAttribute="leading" id="tFN-ap-0XW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Zya-GB-gSg"/>
+                    <connections>
+                        <outlet property="myWebView" destination="18n-hY-TYX" id="Xwm-y8-IXy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ajk-j8-0C3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2901.5999999999999" y="178.56071964017991"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="WI7-fo-cMa">
+            <objects>
+                <viewController id="Z0k-J0-VoW" customClass="HomeViewController" customModule="FlashCard_African_Flags" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QpE-AS-fZc"/>
+                        <viewControllerLayoutGuide type="bottom" id="mcK-kg-1sf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XgI-qv-3C1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nHr-yj-cYX">
+                                <rect key="frame" x="25" y="100" width="270" height="340"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flags of Africa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DZq-5r-Alr">
+                                        <rect key="frame" x="7.5" y="0.0" width="255.5" height="70"/>
+                                        <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="60"/>
+                                        <color key="textColor" red="0.2124629961" green="0.64291207900000003" blue="0.31996928089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="African Union_Flag" translatesAutoresizingMaskIntoConstraints="NO" id="0m8-b1-wpg">
+                                        <rect key="frame" x="0.0" y="80" width="270" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="400" id="j5D-BA-xvA"/>
+                                            <constraint firstAttribute="width" secondItem="0m8-b1-wpg" secondAttribute="height" multiplier="3:2" id="zNQ-1h-7NN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="754" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lcD-SL-1UG">
+                                        <rect key="frame" x="92.5" y="270" width="85" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvD-jT-OiB" customClass="roundedButtons" customModule="FlashCard_African_Flags" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Explore">
+                                                    <color key="titleColor" red="0.33705236543014017" green="0.63498060691878178" blue="0.36244124974534786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="kXG-6m-4w1" kind="show" id="2dC-DN-0nj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sna-ZI-nUa" customClass="roundedButtons" customModule="FlashCard_African_Flags" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="40" width="85" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="85" id="djl-6Y-Izw"/>
+                                                </constraints>
+                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                                <state key="normal" title="Flashcards">
+                                                    <color key="titleColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="zIl-5b-27v" kind="show" id="7YA-uu-aGQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.7268536377" green="0.85106825269999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7268536377" green="0.85106825269999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nHr-yj-cYX" firstAttribute="leading" secondItem="XgI-qv-3C1" secondAttribute="leading" constant="25" id="AfC-JX-QeN"/>
+                            <constraint firstAttribute="trailing" secondItem="nHr-yj-cYX" secondAttribute="trailing" constant="25" id="UsO-hR-bBs"/>
+                            <constraint firstItem="mcK-kg-1sf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nHr-yj-cYX" secondAttribute="bottom" constant="25" id="x0S-Mg-tbn"/>
+                            <constraint firstItem="nHr-yj-cYX" firstAttribute="top" secondItem="XgI-qv-3C1" secondAttribute="topMargin" constant="100" id="zNv-ZI-iCT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="wqs-vi-PMZ"/>
+                    <connections>
+                        <outlet property="homeImage" destination="0m8-b1-wpg" id="1iq-8T-dqm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4x-rr-nxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572" y="178.56071964017991"/>
+        </scene>
+        <!--Explore Table View Controller-->
+        <scene sceneID="PcX-eh-XDa">
+            <objects>
+                <tableViewController id="kXG-6m-4w1" customClass="ExploreTableViewController" customModule="FlashCard_African_Flags" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="G3w-jm-mNY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="myCell" id="aKb-Jp-t6B" customClass="ListTableViewCell" customModule="FlashCard_African_Flags" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aKb-Jp-t6B" id="IhO-Lh-zhU">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Angola" translatesAutoresizingMaskIntoConstraints="NO" id="rk3-mx-kjj">
+                                            <rect key="frame" x="8" y="5" width="46" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="rk3-mx-kjj" secondAttribute="height" multiplier="3:2" id="FmB-SY-pa9"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orj-Gs-9Z1">
+                                            <rect key="frame" x="56.5" y="12" width="39" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rk3-mx-kjj" firstAttribute="leading" secondItem="IhO-Lh-zhU" secondAttribute="leadingMargin" id="HFk-SK-dvG"/>
+                                        <constraint firstItem="orj-Gs-9Z1" firstAttribute="centerY" secondItem="IhO-Lh-zhU" secondAttribute="centerY" id="S58-hj-pcl"/>
+                                        <constraint firstItem="rk3-mx-kjj" firstAttribute="bottom" secondItem="IhO-Lh-zhU" secondAttribute="bottomMargin" id="Tj0-iv-254"/>
+                                        <constraint firstItem="rk3-mx-kjj" firstAttribute="top" secondItem="IhO-Lh-zhU" secondAttribute="topMargin" id="tPD-12-01U"/>
+                                        <constraint firstItem="orj-Gs-9Z1" firstAttribute="leading" secondItem="rk3-mx-kjj" secondAttribute="trailing" constant="8" id="yQC-9R-W6D"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="flagImage" destination="rk3-mx-kjj" id="mas-bl-nAG"/>
+                                    <outlet property="nameLabel" destination="orj-Gs-9Z1" id="Txr-Rk-gGj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kXG-6m-4w1" id="6jL-4C-tNq"/>
+                            <outlet property="delegate" destination="kXG-6m-4w1" id="6e7-oK-PAY"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="TableToCard" id="Nc8-Lx-se5"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZt-XP-Q8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248.75" y="-477.5"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="uFV-dK-aLi">
+            <objects>
+                <viewController id="zIl-5b-27v" customClass="SettingsViewController" customModule="FlashCard_African_Flags" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jj9-yf-x3A"/>
+                        <viewControllerLayoutGuide type="bottom" id="l6o-hE-nt4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ltg-Ea-6fP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sUU-f7-B8r">
+                                <rect key="frame" x="83" y="111" width="154.5" height="133"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zyD-MO-Ejj">
+                                        <rect key="frame" x="0.0" y="0.0" width="154.5" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLh-NO-Cfe">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MRx-er-28s">
+                                                <rect key="frame" x="60" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="checkSwitches:" destination="zIl-5b-27v" eventType="valueChanged" id="vTS-po-BVJ"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQ2-EK-ZZp">
+                                                <rect key="frame" x="119" y="0.0" width="35.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G4n-H3-ZZx">
+                                        <rect key="frame" x="13" y="51" width="141.5" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flag:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdV-Fr-hh1">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DCh-hE-jyj">
+                                                <rect key="frame" x="47" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="checkSwitches:" destination="zIl-5b-27v" eventType="valueChanged" id="vdW-j9-VCR"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwd-w3-x3c">
+                                                <rect key="frame" x="106" y="0.0" width="35.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Awg-DP-dWX">
+                                        <rect key="frame" x="16.5" y="102" width="138" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fC-ad-kiQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="33.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.3370523654" green="0.63498060690000002" blue="0.36244124970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y9X-I8-Dz2">
+                                                <rect key="frame" x="43.5" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="checkSwitches:" destination="zIl-5b-27v" eventType="valueChanged" id="GI7-3x-fML"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0Q-Zd-AuH">
+                                                <rect key="frame" x="102.5" y="0.0" width="35.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7268536377" green="0.85106825269999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sUU-f7-B8r" firstAttribute="centerX" secondItem="ltg-Ea-6fP" secondAttribute="centerX" id="1D4-SG-COL"/>
+                            <constraint firstItem="sUU-f7-B8r" firstAttribute="top" secondItem="Jj9-yf-x3A" secondAttribute="bottom" constant="47" id="6rH-Ue-7lD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="qso-t5-UcQ">
+                        <barButtonItem key="rightBarButtonItem" title="Load" id="Jx9-Pb-dmW">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="4Gi-v3-9mz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="flagSwitch" destination="DCh-hE-jyj" id="nwP-SJ-chE"/>
+                        <outlet property="infoSwitch" destination="Y9X-I8-Dz2" id="1jp-Ig-OOc"/>
+                        <outlet property="nameSwitch" destination="MRx-er-28s" id="7i4-Ls-jHQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sop-iy-LR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1299.375" y="177.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Iql-xl-EDP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KkQ-hx-DtC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RJK-h8-YE3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Z0k-J0-VoW" kind="relationship" relationship="rootViewController" id="MnG-vD-Rxw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjc-iS-UR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367.19999999999999" y="178.56071964017991"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="African Union_Flag" width="600" height="400"/>
+        <image name="Angola" width="450" height="300"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Nc8-Lx-se5"/>
+    </inferredMetricsTieBreakers>
+</document>
